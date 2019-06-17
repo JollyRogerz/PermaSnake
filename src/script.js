@@ -35,6 +35,7 @@ function pickFoodLocation() {
     return createVector(pickX, pickY).mult(segment)
 }
 
+
 function draw() {
     background(51)
 
@@ -63,10 +64,6 @@ function mousePressed() {
 
 
     }
-}
-
-function updateHighscore() {
-
 }
 
 function keyPressed() {
@@ -124,10 +121,3 @@ document.addEventListener('touchend', function onFirstTouch(e) {
 
     // window.removeEventListener('touchmove', onFirstTouch, false);
 }, false);
-
-window.onload = function() {
-    // register service worker
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js', { scope: '/' })
-    }
-}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="src/icons/icon@48.png">
+    <link rel="shortcut icon" sizes="96x96" href="src/icons/icon@96.png">
+    <link rel="shortcut icon" sizes="128x128" href="src/icons/icon@128.png">
+    <link rel="shortcut icon" sizes="256x256" href="src/icons/icon@256.png">
+    <link rel='stylesheet' type='text/css' href='main.css' />
+
+    <meta name="theme-color" content="#333">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.js"></script>
+    <script src="sw.js"></script>
+    <script src="src/snake.js"></script>
+    <script src="src/script.js" async defer></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 480px) {
+            body {
+                width: 100vw;
+            }
+        }
+    </style>
+
+    <h1 id="title">Snake</h1>
+    <p id="Score">Score: 0
+    </p>
+    <p id="HighScore">High Score: 0
+    </p>
+
+
+</body>
